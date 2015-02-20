@@ -1,0 +1,30 @@
+/**
+* Typography styles
+**/
+
+.h2 {
+  position: relative;
+  width: 420px;
+  text-align: center;
+  padding-bottom: 35px;
+  font-size: 24px;
+  color: @color-default;
+  font-weight: 300;
+  border-bottom: 1px solid #c3c3c3;
+  margin: 0 auto 50px auto;
+
+  &:after {
+    content: "";
+    position: absolute;
+    bottom: -1.5px;
+    left: 50%;
+    margin-left: -15px;
+    width: 30px;
+    height: 3px;
+    background-color: @color-primary;
+  }
+
+  span {
+    font-weight: 600;
+  }
+}
