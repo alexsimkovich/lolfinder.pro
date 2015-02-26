@@ -1,0 +1,69 @@
+/**
+* Social styles
+**/
+
+.social-buttons {
+  float: left;
+
+  .social-buttons_ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    .social-buttons_li {
+      height: 64px;
+      width: 64px;
+      text-align: center;
+      line-height: 68px;
+      vertical-align: middle;
+      -webkit-transition: all ease 0.3s;
+      -moz-transition: all ease 0.3s;
+      -ms-transition: all ease 0.3s;
+      -o-transition: all ease 0.3s;
+      transition: all ease 0.3s;
+
+      &.__facebook {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
+
+      &.__twitter {
+        background-color: rgba(255, 255, 255, 0.25);
+      }
+
+      &.__skype {
+        background-color: rgba(255, 255, 255, 0.2);
+      }
+
+      &.__envelope {
+        background-color: rgba(255, 255, 255, 0.15);
+      }
+
+      a {
+        display: block;
+        color: #fff;
+        
+        i {
+          font-size: 1.5em;
+        }
+      }
+
+      &:hover {
+        &.__facebook {
+          background-color: @color-facebook;
+        }
+
+        &.__twitter {
+          background-color: @color-twitter;
+        }
+
+        &.__skype {
+          background-color: @color-skype;
+        }
+
+        &.__envelope {
+          background-color: @color-mail;
+        }
+      }
+    }
+  }
+}

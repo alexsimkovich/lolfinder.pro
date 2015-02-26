@@ -1,6 +1,12 @@
 /**
 * Starting styles
 **/
+@color-default: #333;
+
+@color-facebook: #3b5998;
+@color-twitter: #4099ff;
+@color-skype: #12a5f4;
+@color-mail: #e67e22;
 
 body {
   background: url(../images/bg/bg.jpg) no-repeat center center fixed;
@@ -8,4 +14,19 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+}
+
+a,
+a:visited {
+  color: @color-default;
+  text-decoration: none;
+  outline: 0;
+  -webkit-transition: color 0.1s ease-in-out;
+  -moz-transition: color 0.1s ease-in-out;
+  -o-transition: color 0.1s ease-in-out;
+  -transition: color 0.1s ease-in-out;
+}
+
+.lf-container {
+  margin: 65px auto 0;
 }
