@@ -1,3 +1,173 @@
 /**
 * Header styles
 **/
+
+.main-column {
+  overflow: hidden;
+
+  .top-row {
+    overflow: hidden;
+    zoom: 1;
+    width: 100%;
+    height: 96px;
+    padding: 20px;
+    background-color: #fff;
+
+    .logo {
+      display: inline-block;
+    }
+
+    .slogan {
+      display: inline-block;
+      vertical-align: middle;
+      font-family: @font-titillium;
+      font-size: 42px;
+      line-height: 42px;
+    }
+  }
+
+  .navigation {
+    display: inline-block;
+    width: 1076px;
+    height: 96px;
+    vertical-align: top;
+
+    .navigation_ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      .navigation_li {
+        height: 96px;
+        text-align: center;
+        width: 179.3px;
+        float: left;
+        
+        a {
+          display: block;
+          color: #fff;
+          padding: 17px 0;
+          
+          .summoner-icon {
+            background: url(../../images/nav/summoner.png);
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            margin-bottom: 5px;
+          }
+          .leaderboard-icon {
+            background: url(../../images/nav/leaderboard.png);
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            margin-bottom: 5px;
+          }
+          .champions-icon {
+            background: url(../../images/nav/champion.png);
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            margin-bottom: 5px;
+          }
+          .items-icon {
+            background: url(../../images/nav/items.png);
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            margin-bottom: 5px;
+          }
+          .stream-icon {
+            background: url(../../images/nav/stream.png);
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            margin-bottom: 5px;
+          }
+          .recent-icon {
+            background: url(../../images/nav/recent.png);
+            width: 32px;
+            height: 32px;
+            display: inline-block;
+            margin-bottom: 5px;
+          }
+
+          p {
+            font-size: 20px;
+            line-height: 20px;
+          }
+          &:hover,
+          &:focus {
+            outline: 0;
+            text-decoration: none;
+
+            &.summoners {
+              background-color: #fff;
+              color: #1abc9c;
+            }
+            &.leaderboard {
+              background-color: #fff;
+              color: #3498db;
+            }
+            &.champions {
+              background-color: #fff;
+              color: #e74c3c;
+            }
+            &.items {
+              background-color: #fff;
+              color: #2f74a3;
+            }
+            &.streams {
+              background-color: #fff;
+              color: #9b59b6;
+            }
+            &.recent {
+              background-color: #fff;
+              color: #e67e22;
+            }
+
+            .summoner-icon {
+              background: url(../../images/nav/summoner_hover.png);
+            }
+            .leaderboard-icon {
+              background: url(../../images/nav/leaderboard_hover.png);
+            }
+            .champions-icon {
+              background: url(../../images/nav/champion_hover.png);
+            }
+            .items-icon {
+              background: url(../../images/nav/items_hover.png);
+            }
+            .stream-icon {
+              background: url(../../images/nav/stream_hover.png);
+            }
+            .recent-icon {
+              background: url(../../images/nav/recent_hover.png);
+            }
+          }
+          &.summoners {
+            background-color: #1abc9c;
+          }
+          &.leaderboard {
+            background-color: #3498db;
+          }
+          &.champions {
+            background-color: #e74c3c;
+          }
+          &.items {
+            background-color: #2f74a3;
+          }
+          &.streams {
+            background-color: #9b59b6;
+          }
+          &.recent {
+            background-color: #e67e22;
+          }
+        }
+
+        &:last-child {
+          width: 179.5px;
+        }
+      }
+    }
+  }
+}

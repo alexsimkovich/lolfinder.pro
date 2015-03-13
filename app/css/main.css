@@ -8339,7 +8339,7 @@ button.close {
 * Starting styles
 **/
 body {
-  background: url(../images/bg/bg.jpg) no-repeat center center fixed;
+  background: url(../images/bg/bg-2.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -8350,17 +8350,187 @@ a:visited {
   color: #333333;
   text-decoration: none;
   outline: 0;
-  -webkit-transition: color 0.1s ease-in-out;
-  -moz-transition: color 0.1s ease-in-out;
-  -o-transition: color 0.1s ease-in-out;
-  -transition: color 0.1s ease-in-out;
+  -webkit-transition: color 0.25s ease-in-out;
+  -moz-transition: color 0.25s ease-in-out;
+  -o-transition: color 0.25s ease-in-out;
+  -transition: color 0.25s ease-in-out;
 }
 .lf-container {
   margin: 65px auto 0;
 }
 /**
 * Header styles
-**//**
+**/
+.main-column {
+  overflow: hidden;
+}
+.main-column .top-row {
+  overflow: hidden;
+  zoom: 1;
+  width: 100%;
+  height: 96px;
+  padding: 20px;
+  background-color: #fff;
+}
+.main-column .top-row .logo {
+  display: inline-block;
+}
+.main-column .top-row .slogan {
+  display: inline-block;
+  vertical-align: middle;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 42px;
+  line-height: 42px;
+}
+.main-column .navigation {
+  display: inline-block;
+  width: 1076px;
+  height: 96px;
+  vertical-align: top;
+}
+.main-column .navigation .navigation_ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.main-column .navigation .navigation_ul .navigation_li {
+  height: 96px;
+  text-align: center;
+  width: 179.3px;
+  float: left;
+}
+.main-column .navigation .navigation_ul .navigation_li a {
+  display: block;
+  color: #fff;
+  padding: 17px 0;
+}
+.main-column .navigation .navigation_ul .navigation_li a .summoner-icon {
+  background: url(../../images/nav/summoner.png);
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.main-column .navigation .navigation_ul .navigation_li a .leaderboard-icon {
+  background: url(../../images/nav/leaderboard.png);
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.main-column .navigation .navigation_ul .navigation_li a .champions-icon {
+  background: url(../../images/nav/champion.png);
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.main-column .navigation .navigation_ul .navigation_li a .items-icon {
+  background: url(../../images/nav/items.png);
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.main-column .navigation .navigation_ul .navigation_li a .stream-icon {
+  background: url(../../images/nav/stream.png);
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.main-column .navigation .navigation_ul .navigation_li a .recent-icon {
+  background: url(../../images/nav/recent.png);
+  width: 32px;
+  height: 32px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+.main-column .navigation .navigation_ul .navigation_li a p {
+  font-size: 20px;
+  line-height: 20px;
+}
+.main-column .navigation .navigation_ul .navigation_li a:hover,
+.main-column .navigation .navigation_ul .navigation_li a:focus {
+  outline: 0;
+  text-decoration: none;
+}
+.main-column .navigation .navigation_ul .navigation_li a:hover.summoners,
+.main-column .navigation .navigation_ul .navigation_li a:focus.summoners {
+  background-color: #fff;
+  color: #1abc9c;
+}
+.main-column .navigation .navigation_ul .navigation_li a:hover.leaderboard,
+.main-column .navigation .navigation_ul .navigation_li a:focus.leaderboard {
+  background-color: #fff;
+  color: #3498db;
+}
+.main-column .navigation .navigation_ul .navigation_li a:hover.champions,
+.main-column .navigation .navigation_ul .navigation_li a:focus.champions {
+  background-color: #fff;
+  color: #e74c3c;
+}
+.main-column .navigation .navigation_ul .navigation_li a:hover.items,
+.main-column .navigation .navigation_ul .navigation_li a:focus.items {
+  background-color: #fff;
+  color: #2f74a3;
+}
+.main-column .navigation .navigation_ul .navigation_li a:hover.streams,
+.main-column .navigation .navigation_ul .navigation_li a:focus.streams {
+  background-color: #fff;
+  color: #9b59b6;
+}
+.main-column .navigation .navigation_ul .navigation_li a:hover.recent,
+.main-column .navigation .navigation_ul .navigation_li a:focus.recent {
+  background-color: #fff;
+  color: #e67e22;
+}
+.main-column .navigation .navigation_ul .navigation_li a:hover .summoner-icon,
+.main-column .navigation .navigation_ul .navigation_li a:focus .summoner-icon {
+  background: url(../../images/nav/summoner_hover.png);
+}
+.main-column .navigation .navigation_ul .navigation_li a:hover .leaderboard-icon,
+.main-column .navigation .navigation_ul .navigation_li a:focus .leaderboard-icon {
+  background: url(../../images/nav/leaderboard_hover.png);
+}
+.main-column .navigation .navigation_ul .navigation_li a:hover .champions-icon,
+.main-column .navigation .navigation_ul .navigation_li a:focus .champions-icon {
+  background: url(../../images/nav/champion_hover.png);
+}
+.main-column .navigation .navigation_ul .navigation_li a:hover .items-icon,
+.main-column .navigation .navigation_ul .navigation_li a:focus .items-icon {
+  background: url(../../images/nav/items_hover.png);
+}
+.main-column .navigation .navigation_ul .navigation_li a:hover .stream-icon,
+.main-column .navigation .navigation_ul .navigation_li a:focus .stream-icon {
+  background: url(../../images/nav/stream_hover.png);
+}
+.main-column .navigation .navigation_ul .navigation_li a:hover .recent-icon,
+.main-column .navigation .navigation_ul .navigation_li a:focus .recent-icon {
+  background: url(../../images/nav/recent_hover.png);
+}
+.main-column .navigation .navigation_ul .navigation_li a.summoners {
+  background-color: #1abc9c;
+}
+.main-column .navigation .navigation_ul .navigation_li a.leaderboard {
+  background-color: #3498db;
+}
+.main-column .navigation .navigation_ul .navigation_li a.champions {
+  background-color: #e74c3c;
+}
+.main-column .navigation .navigation_ul .navigation_li a.items {
+  background-color: #2f74a3;
+}
+.main-column .navigation .navigation_ul .navigation_li a.streams {
+  background-color: #9b59b6;
+}
+.main-column .navigation .navigation_ul .navigation_li a.recent {
+  background-color: #e67e22;
+}
+.main-column .navigation .navigation_ul .navigation_li:last-child {
+  width: 179.5px;
+}
+/**
 * Social styles
 **/
 .social-buttons {
