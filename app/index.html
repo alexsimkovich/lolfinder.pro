@@ -6,7 +6,7 @@
 <!--[if IE 8]>
 <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!-->
-<html class="no-js"> <!--<![endif]-->
+<html class="no-js" ng-app="LF"> <!--<![endif]-->
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -89,7 +89,28 @@
           </li>
         </ul>
       </div>
-
+      <div class="content">
+        <!--<p>We've been doing large champion pools lately so this week is a bit smaller. We're asking you to play as champions with global ultimates--this means even champions like Nocturne don't count, since their ultimates aren't quite global. </p>
+        <p>Another week in games, another Friday Update Arcade! This week, Friday Update Arcade covers everything from PAX East. It also reminds you to check out the new League of Legends skins that hit the PBE as well as watch IEM this weekend for some awesome League of Legends games! For more previews on the new skins, be sure to check them out in our modelviewer right here on LolKing.</p>
+        <p>We have the weekly episode of League Trends from Cloth5 showing last week's ban, pick, and win rate patterns! As usual, stats are transcribed below to be used as a reference for the past week.
+          Be sure to subscribe to LolKing's YouTube channel for upcoming stat videos, more interviews, and other League of Legends coverage!</p>-->
+        <form class="search-summoner">
+          <div class="radio-inline" ng-controller="ServerList">
+            <div class="radio-inline_box" ng-repeat="server in servers">
+              <input type="radio" name="radiog_lite" id="radio{{server.name}}" class="css-checkbox" /><label for="radio{{server.name}}" class="css-label radGroup1">{{server.name}}</label>
+            </div>
+          </div>
+          <div class="search-summoner_group">
+            <span class="search-summoner_placeholder">Search Summoners, Champions, and Items</span>
+            <input type="search" class="search-summoner_input" />
+            <button type="submit" class="search-summoner_button">Search</button>
+          </div>
+        </form>
+      </div>
+      <footer class="footer">
+        <div class="triangle"></div>
+        <div class="copyright">© 2015. All rights reserved.</div>
+      </footer>
     </div>
 
 
@@ -115,8 +136,9 @@
     </form>-->
   </div>
 </div>
-
 <script src="js/lib/jquery.min.js"></script>
+<script src="js/lib/angular.js"></script>
+<script src="js/controllers.js"></script>
 <script src="js/lib/bootstrap.min.js"></script>
 <script src="js/general.js"></script>
 </body>
